@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">project</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img id="clouds"
+            src="./img/png-transparent-cartoon-cloud-animation-clouds-cartoon-blue-white-hand-removebg-preview.png">
+        <img id="sun" src="./img/11561_Sun.png">
+        <h2 id="text">Sun Light</h2>
+        <img id="mountains" src="./img/Untitled_design-removebg-preview.png">
+    </section>
+    <div class="sec">
+        <p>Parallax scrolling is a computer graphics technique used by web designers to create a faux-3D effect. As
+            users scroll down a webpage, different layers of content or backgrounds move at different speeds, and this
+            creates an optical illusion
+            <br><br>Parallax scrolling is a computer graphics technique used by web designers to create a faux-3D
+            effect. As users scroll down a webpage, different layers of content or backgrounds move at different speeds,
+            and this creates an optical illusion
+            <br><br>Parallax scrolling is a computer graphics technique used by web designers to create a faux-3D
+            effect. As users scroll down a webpage, different layers of content or backgrounds move at different speeds,
+            and this creates an optical illusion
+            <br><br>Parallax scrolling is a computer graphics technique used by web designers to create a faux-3D
+            effect. As users scroll down a webpage, different layers of content or backgrounds move at different speeds,
+            and this creates an optical illusion
+            <br><br>Parallax scrolling is a computer graphics technique used by web designers to create a faux-3D
+            effect. As users scroll down a webpage, different layers of content or backgrounds move at different speeds,
+            and this creates an optical illusion
+            <br><br>Parallax scrolling is a computer graphics technique used by web designers to create a faux-3D
+            effect. As users scroll down a webpage, different layers of content or backgrounds move at different speeds,
+            and this creates an optical illusion
+        </p>
+    </div>
+    <script>
+        let clouds = document.getElementById('clouds');
+        let sun = document.getElementById('sun');
+        let mountains =document.getElementById('mountains');
+
+        window.addEventListener('scroll',function(){
+            let value= window.scrollY;
+            clouds.style.left= value *1.25 + 'px';
+            sun.style.top = value*1.25 + 'px';
+            mountains.style.top = value*1.25 + 'px';
+
+        })
+    </script>
+</body>
+
+</html>
